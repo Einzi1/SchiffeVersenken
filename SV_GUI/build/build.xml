@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Schiffe versenken">
+	<property name="dir.buildfile" value="." />
+	<property name="dir.jarfile" value="${dir.buildfile}" />
+	<target name="create_run_jar">
+		<jar destfile="${dir.jarfile}/sv.jar">
+			<manifest>
+				<attribute name="Main-Class" value="de.verbund.sv.gui.Start" />
+			</manifest>
+			<fileset dir="${dir.buildfile}/../../SV_GUI/bin" />
+			<fileset dir="${dir.buildfile}/../../SV_COMMON/bin" />
+			<fileset dir="${dir.buildfile}/../../SV_MAIN/bin" />
+			<fileset dir="${dir.buildfile}/../../SV_NETZ/bin" />
+		</jar>
+		<delete dir="${dir.jarfile}/Bilder" />
+		<mkdir dir="${dir.jarfile}/Bilder" />
+		<copy todir="${dir.jarfile}/Bilder" overwrite="true">
+			<fileset dir="${dir.buildfile}/../Bilder">
+				<include name="**/*.*" />
+			</fileset>
+		</copy>
+	</target>
+</project>
