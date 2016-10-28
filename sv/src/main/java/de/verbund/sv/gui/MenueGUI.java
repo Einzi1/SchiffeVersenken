@@ -29,27 +29,12 @@ public class MenueGUI {
 	private JFrame frmMen;
 
 	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					MenueGUI window = new MenueGUI();
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
 	 * Create the application.
 	 */
 	public MenueGUI() {
 		initialize();
 		frmMen.setVisible(true);
-		// l√§d dann schon einmal im Hintergrund die Bilder.
+		// l‰dt dann schon einmal im Hintergrund die Bilder.
 		RessourceSingleton.getInstance();
 	}
 
