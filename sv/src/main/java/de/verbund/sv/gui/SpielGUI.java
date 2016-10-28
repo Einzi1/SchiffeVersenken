@@ -2,8 +2,6 @@ package de.verbund.sv.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.EventQueue;
-import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.GridBagConstraints;
@@ -11,13 +9,9 @@ import java.awt.GridBagLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
@@ -50,7 +44,6 @@ public class SpielGUI {
 	private static final int GEWONNEN = 3;
 
 	private JDialog frame;
-	private BufferedImage hintergrund;
 
 	private SpielbrettManager spielfeldGegner;
 	private SpielbrettManager spielfeldEigenes;
@@ -126,7 +119,7 @@ public class SpielGUI {
 		gbl_panel.rowWeights = new double[] { 0.0, 1.0, 0.0, Double.MIN_VALUE };
 		panel.setLayout(gbl_panel);
 
-		JLabel lblNewLabel = new JLabel("Gegnerisches Gew√§sser");
+		JLabel lblNewLabel = new JLabel("Gegnerisches Gew‰sser");
 		lblNewLabel.setFont(new Font("Lucida Bright", Font.PLAIN, 18));
 		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
 		gbc_lblNewLabel.insets = new Insets(50, 0, 25, 5);
@@ -134,7 +127,7 @@ public class SpielGUI {
 		gbc_lblNewLabel.gridy = 0;
 		panel.add(lblNewLabel, gbc_lblNewLabel);
 
-		JLabel lblEignesGewsser = new JLabel("Eigenes Gew√§sser");
+		JLabel lblEignesGewsser = new JLabel("Eigenes Gew‰sser");
 		lblEignesGewsser.setFont(new Font("Lucida Bright", Font.PLAIN, 18));
 		GridBagConstraints gbc_lblEignesGewsser = new GridBagConstraints();
 		gbc_lblEignesGewsser.insets = new Insets(50, 0, 25, 0);
@@ -163,7 +156,6 @@ public class SpielGUI {
 		panel.add(panel_2, gbc_panel_2);
 
 		JPanel panel_3 = new JPanel();
-		FlowLayout flowLayout = (FlowLayout) panel_3.getLayout();
 		frame.getContentPane().add(panel_3, BorderLayout.NORTH);
 
 		JLabel label = new JLabel("BATTLESHIP DESTROYER ");
@@ -186,7 +178,7 @@ public class SpielGUI {
 		JMenu mnEinstellungen = new JMenu("Einstellungen");
 		menuBar.add(mnEinstellungen);
 
-		JMenuItem mntmHauptmen = new JMenuItem("Hauptmen√º");
+		JMenuItem mntmHauptmen = new JMenuItem("Hauptmen¸");
 		mntmHauptmen.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				oeffneMenue();
@@ -254,9 +246,9 @@ public class SpielGUI {
 					status = this.spielfeldEigenes.getStatus(koordinaten);
 				}
 
-				SVButton button = new SVButton(status);
+				final SVButton button = new SVButton(status);
 
-				GridBagConstraints gbc = new GridBagConstraints();
+				final GridBagConstraints gbc = new GridBagConstraints();
 				gbc.gridx = x;
 				gbc.gridy = y;
 

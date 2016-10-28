@@ -18,13 +18,16 @@ import de.verbund.sv.tools.Schiff;
  */
 public class SpielfeldManagerImplementation implements SpielbrettManager, Serializable {
 
-    private int[][] spielfeld;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private int[][] spielfeld;
 
     private int groesse;
 
     private SocketClientService socketClient;
-
-    private boolean erster;
     /**
      * bestimmt, ob dieses Spielfeld ein eigenes ist. Wichtig für die
      * Kommunikation mit dem Client

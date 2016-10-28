@@ -15,7 +15,6 @@ import java.util.Map;
 
 import javax.imageio.ImageIO;
 import javax.swing.Icon;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.border.LineBorder;
 
@@ -25,6 +24,10 @@ import de.verbund.sv.SpielfeldManagerImplementation;
 
 public class SVButton extends JButton {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private BufferedImage imgCursor;
 	private Icon imgWasser = RessourceSingleton.getInstance().getImgWasser();
 	private Icon imgWasserGetroffen = RessourceSingleton.getInstance().getImgWasserGetroffen();
