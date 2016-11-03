@@ -20,14 +20,13 @@ import javax.swing.border.LineBorder;
 
 import de.verbund.sv.SpielfeldManagerImplementation;
 
-//Simon
-
 public class SVButton extends JButton {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+
 	private BufferedImage imgCursor;
 	private Icon imgWasser = RessourceSingleton.getInstance().getImgWasser();
 	private Icon imgWasserGetroffen = RessourceSingleton.getInstance().getImgWasserGetroffen();

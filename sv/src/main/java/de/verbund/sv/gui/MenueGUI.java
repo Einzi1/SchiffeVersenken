@@ -113,7 +113,7 @@ public class MenueGUI {
 		JButton btnRegelwerk = new JButton("Regelwerk");
 		btnRegelwerk.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				regelwerk();
+				oeffneRegelwerk();
 			}
 		});
 		GridBagConstraints gbc_btnRegelwerk = new GridBagConstraints();
@@ -144,7 +144,7 @@ public class MenueGUI {
 		new NeuesSpielGUI();
 	}
 
-	protected void regelwerk() {
+	protected void oeffneRegelwerk() {
 		new RegelwerkGUI();
 	}
 

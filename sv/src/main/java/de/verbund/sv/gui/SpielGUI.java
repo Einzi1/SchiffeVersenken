@@ -210,7 +210,6 @@ public class SpielGUI {
 	protected void oeffneMenue() {
 		int option = JOptionPane.showConfirmDialog(frame, "Wirklich beenden?", "Achtung", JOptionPane.OK_CANCEL_OPTION);
 		if (option == JOptionPane.OK_OPTION) {
-			new MenueGUI();
 			frame.dispose();
 		}
 	}
