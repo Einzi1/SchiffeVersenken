@@ -31,8 +31,6 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JTextField;
 
-// Simon und Taner
-
 public class NeuesSpielGUI {
 
 	private JDialog dialog;
@@ -134,7 +132,7 @@ public class NeuesSpielGUI {
 		gbl_panel_5.rowWeights = new double[] { 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE };
 		panel_5.setLayout(gbl_panel_5);
 
-		JButton btnRndSetzeSchiff = new JButton("Schiffe zuf‰llig setzen");
+		JButton btnRndSetzeSchiff = new JButton("Schiffe zuf√§llig setzen");
 		btnRndSetzeSchiff.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JPanel tempPanel = initSpielfeldRandom();

@@ -119,7 +119,7 @@ public class SpielGUI {
 		gbl_panel.rowWeights = new double[] { 0.0, 1.0, 0.0, Double.MIN_VALUE };
 		panel.setLayout(gbl_panel);
 
-		JLabel lblNewLabel = new JLabel("Gegnerisches Gew‰sser");
+		JLabel lblNewLabel = new JLabel("Gegnerisches Gew√§sser");
 		lblNewLabel.setFont(new Font("Lucida Bright", Font.PLAIN, 18));
 		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
 		gbc_lblNewLabel.insets = new Insets(50, 0, 25, 5);
@@ -127,7 +127,7 @@ public class SpielGUI {
 		gbc_lblNewLabel.gridy = 0;
 		panel.add(lblNewLabel, gbc_lblNewLabel);
 
-		JLabel lblEignesGewsser = new JLabel("Eigenes Gew‰sser");
+		JLabel lblEignesGewsser = new JLabel("Eigenes Gew√§sser");
 		lblEignesGewsser.setFont(new Font("Lucida Bright", Font.PLAIN, 18));
 		GridBagConstraints gbc_lblEignesGewsser = new GridBagConstraints();
 		gbc_lblEignesGewsser.insets = new Insets(50, 0, 25, 0);
@@ -178,7 +178,7 @@ public class SpielGUI {
 		JMenu mnEinstellungen = new JMenu("Einstellungen");
 		menuBar.add(mnEinstellungen);
 
-		JMenuItem mntmHauptmen = new JMenuItem("Hauptmen¸");
+		JMenuItem mntmHauptmen = new JMenuItem("Hauptmen√º");
 		mntmHauptmen.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				oeffneMenue();

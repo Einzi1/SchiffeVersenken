@@ -34,7 +34,7 @@ public class MenueGUI {
 	public MenueGUI() {
 		initialize();
 		frmMen.setVisible(true);
-		// l‰dt dann schon einmal im Hintergrund die Bilder.
+		// l√§dt dann schon einmal im Hintergrund die Bilder.
 		RessourceSingleton.getInstance();
 	}
 
