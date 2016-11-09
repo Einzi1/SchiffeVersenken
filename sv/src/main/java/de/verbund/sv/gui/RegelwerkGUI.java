@@ -2,7 +2,6 @@ package de.verbund.sv.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
-import java.io.StringWriter;
 
 import javax.swing.ImageIcon;
 import javax.swing.JDialog;
